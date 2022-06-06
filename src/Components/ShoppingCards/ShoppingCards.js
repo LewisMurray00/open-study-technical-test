@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
+import './ShoppingCards.css';
 
 const ShoppingCards = () => {
 
@@ -22,10 +23,10 @@ const ShoppingCards = () => {
         return(
             <>
             <div className="shoppingCardsBox">
-                {/* <img src={values.image} alt="product" className="shoppingCardsImage"/> */}
-                <h1 className="shoppingCardsTitle">
+                <img src={values.image} alt="product" className="shoppingCardsImage"/>
+                <h2 className="shoppingCardsTitle">
                     {values.title}
-                </h1>
+                </h2>
                 <p className="shoppingCardsDescription">
                     {values.description}
                 </p>
