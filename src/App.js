@@ -1,11 +1,10 @@
 import './App.css';
+import ShoppingCards from './Components/ShoppingCards/ShoppingCards';
 
 function App() {
   return (
     <div>
-      <h1>
-        Hello
-      </h1>
+      <ShoppingCards />
     </div>
   );
 }
