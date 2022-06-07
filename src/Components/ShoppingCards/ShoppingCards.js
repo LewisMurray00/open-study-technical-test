@@ -18,24 +18,24 @@ const ShoppingCards = () => {
     }, [])
 
   return (
-    <div className="shoppingCardContainer">
+    <div className="shopping-card-container">
  {state.map((values)=>{
         return(
             <>
-            <div className='shoppingCard'>
-                <div className='shoppingCardBody'>
-                    <img src={values.image} alt="products" className='shoppingCardImage'/>
-                    <h2 className='shoppingCardTitle'>
+            <div className='shopping-card'>
+                <div className='shopping-card-body'>
+                    <img src={values.image} alt="products" className='shopping-card-image'/>
+                    <h2 className='shopping-card-title'>
                         {values.title}
                     </h2>
-                    <p className='shoppingCardDescription'>
+                    <p className='shopping-card-description'>
                         {values.description}
                     </p>
-                    <p className='shoppingCardPrice'>
+                    <p className='shopping-card-price'>
                         £{values.price}
                     </p>
                 </div>
-                <button className='shoppingCardButton'>Add to cart</button>
+                <button className='shopping-card-button'>Add to cart</button>
             </div>
             </>
         )

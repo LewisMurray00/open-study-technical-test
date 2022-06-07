@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-.shoppingCardContainer{
+.shopping-card-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
     gap: 2rem;
@@ -14,7 +14,7 @@
     padding-top: 20px;
 }
 
-.shoppingCard{
+.shopping-card{
     overflow: hidden;
     box-shadow: 0 2px 20px grey;
     border-radius: 0.2rem;
@@ -25,27 +25,27 @@
     transition: transform 200ms ease-in;
 }
 
-.shoppingCard:hover{
+.shopping-card:hover{
     transform: scale(1.02);
 }
 
-.shoppingCardImage{
+.shopping-card-image{
     height: 12rem;
     width: 100%;
 }
 
-.shoppingCardTitle{
+.shopping-card-title{
     padding: 1rem;
     font-size: 15px;
 }
 
-.shoppingCardDescription{
+.shopping-card-description{
     padding: 0 1rem;
     font-size: 12px;
     display: none;
 }
 
-.shoppingCardPrice{
+.shopping-card-price{
     padding: 0 1rem;
     font-size: large;
     padding-bottom: 10px;
