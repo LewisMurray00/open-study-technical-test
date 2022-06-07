@@ -1,42 +1,45 @@
-.shoppingCardsContainer{
-    width: 700px;
-    overflow: hidden;
-    box-shadow: 0px 0px 15px -5px;
-    transition: 0.3s;
-    animation: ease-in;
-}
-
-.shoppingCardsBox{
-    width: 200px;
-    margin: 1rem;
-    margin-top: 0.5rem;
-}
-
-.shoppingCardsBox:hover{
-    transform: scale(1.1);
-    box-shadow: 0px 0px 15px 0px;
-}
-
-.shoppingCardsImage{
-    overflow: hidden;
-    max-width: 100%;
-    max-height: 100%;
-    height: 100px;
-}
-
-.shoppingCardsTitle, .shoppingCardsDescription {
+*,
+*::before,
+*:after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.shoppingCardsTitle{
-   margin-bottom: 0.5rem;
-   font-size: large;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.shoppingCardContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 20px;
 }
 
-.shoppingCardsDescription{
-    font-size: medium;
+.shoppingCard{
+    overflow: hidden;
+    box-shadow: 0 2px 20px grey;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.shoppingCard:hover{
+    transform: scale(1.02);
+}
+
+.shoppingCardImage{
+    height: 12rem;
+    width: 100%;
+}
+
+.shoppingCardTitle{
+    padding: 1rem;
+    font-size: 15px;
+}
+
+.shoppingCardDescription{
+    padding: 0 1rem;
+    font-size: 12px;
 }
