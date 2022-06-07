@@ -42,4 +42,11 @@
 .shoppingCardDescription{
     padding: 0 1rem;
     font-size: 12px;
+    display: none;
+}
+
+.shoppingCardPrice{
+    padding: 0 1rem;
+    font-size: large;
+    padding-bottom: 10px;
 }

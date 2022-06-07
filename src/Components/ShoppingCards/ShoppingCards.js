@@ -22,16 +22,6 @@ const ShoppingCards = () => {
  {state.map((values)=>{
         return(
             <>
-            {/* <div className="shoppingCardsBox">
-                <img src={values.image} alt="product" className="shoppingCardsImage"/>
-                <h2 className="shoppingCardsTitle">
-                    {values.title}
-                </h2>
-                <p className="shoppingCardsDescription">
-                    {values.description}
-                </p>
-            </div>
-            </> */}
             <div className='shoppingCard'>
                 <div className='shoppingCardBody'>
                     <img src={values.image} alt="products" className='shoppingCardImage'/>
@@ -40,6 +30,9 @@ const ShoppingCards = () => {
                     </h2>
                     <p className='shoppingCardDescription'>
                         {values.description}
+                    </p>
+                    <p className='shoppingCardPrice'>
+                        £{values.price}
                     </p>
                 </div>
                 <button className='shoppingCardButton'>Add to cart</button>
