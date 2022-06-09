@@ -25,6 +25,10 @@ function App() {
     }
   }
 
+  const onRemove = (product) => {
+    
+  }
+
   return (
     <>
     <Router>
