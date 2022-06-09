@@ -1,8 +1,19 @@
 import React from 'react'
 
-const ShoppingBasket = () => {
+const ShoppingBasket = (props) => {
+
+  const {shoppingBasket} = props
+
   return (
-    <div>Your basket is empty</div>
+    <>
+      <div>Shopping Cart</div>
+      <div>
+        {shoppingBasket.length === 0 && <div>
+          Cart is empty
+        </div>}
+      </div>
+    </>
+    
   )
 }
 

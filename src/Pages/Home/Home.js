@@ -1,11 +1,16 @@
 import React from 'react'
 import ShoppingCards from '../../Components/ShoppingCards/ShoppingCards'
 
-const Home = () => {
+const Home = (props) => {
+  const {products} = props;
+
   return (
-    <div>
-        <ShoppingCards />
-    </div>
+    <>
+    {products.map((product) =>(
+      <ShoppingCards key={product.id} product={product} />
+    ))}
+    </>
+   
   )
 }
 
