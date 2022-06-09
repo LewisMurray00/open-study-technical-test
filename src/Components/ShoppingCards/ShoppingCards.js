@@ -3,7 +3,7 @@ import './ShoppingCards.css';
 
 const ShoppingCards = (props) => {
 
-    const { product } = props
+    const { product, onAdd } = props
     // //Setting state
     // const [state, setState] = useState([]);
 
@@ -33,7 +33,7 @@ const ShoppingCards = (props) => {
                     £{product.price}
                 </p>
             </div>
-            <button className='shopping-card-button' >Add to cart</button>
+            <button className='shopping-card-button' onClick={()=> onAdd(product)} >Add to cart</button>
         </div>
     </div>
   )
