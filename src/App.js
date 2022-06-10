@@ -25,6 +25,7 @@ function App() {
     }
   }
 
+  //Function that handles the remove item from basket ability
   const onRemove = (product) => {
     const exist = shoppingBasket.find((x)=> x.id === product.id)
     if(exist.qty === 1){
@@ -37,7 +38,7 @@ function App() {
   return (
     <>
     <Router>
-      <Navbar/>
+      <Navbar countShoppingBasketItems={shoppingBasket.length}/>
       <Routes>
         <Route path="/" exact element={<Home products={products} onAdd={onAdd} />} />
         <Route path="shopping-basket" exact element={<ShoppingBasket shoppingBasket={shoppingBasket} onAdd={onAdd} onRemove={onRemove} />} />

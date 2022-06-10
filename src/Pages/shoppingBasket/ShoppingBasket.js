@@ -4,6 +4,11 @@ const ShoppingBasket = (props) => {
 
   const {shoppingBasket, onAdd, onRemove} = props
 
+  //Creating the summary of the basket
+
+  //Working out the item price
+  const itemsPrice = shoppingBasket.reduce((acca, current) => acca + current.price * current.qty, 0)
+
   return (
     <>
       <div>Shopping Cart</div>
@@ -30,6 +35,16 @@ const ShoppingBasket = (props) => {
           
         </div>
       ))}
+
+        {/* Displaying the shopping basket summery */}
+        {shoppingBasket.length !== 0 && (
+          <>
+            <div>
+              <p>Cost of items:</p>
+              <p>£{itemsPrice.toFixed(2)}</p>
+            </div>
+          </>
+        )}
     </>
     
   )
