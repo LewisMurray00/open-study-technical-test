@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 
 const Navbar = (props) => {
 
+    const {countShoppingBasketItems} = props;
+
   return (
     <>
         <nav className='navbar'>
@@ -17,6 +19,9 @@ const Navbar = (props) => {
                 <li>
                     <Link to='shopping-basket' className='nav-links' >
                         <FaShoppingCart />
+                        <p>
+                            {countShoppingBasketItems}
+                        </p>
                     </Link>
                 </li>
             </ul>
