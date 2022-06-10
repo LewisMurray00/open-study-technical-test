@@ -17,7 +17,7 @@ function App() {
   const onAdd = (product) => {
     const exist = shoppingBasket.find(x => x.id === product.id)
     if(exist){
-      setShoppingBasket(shoppingBasket.map( x => x.id === product.id ? {...exist, qty: exist.qty + 1} : x
+      setShoppingBasket(shoppingBasket.map((x) => x.id === product.id ? {...exist, qty: exist.qty + 1} : x
         )
       )
     } else {
@@ -26,7 +26,12 @@ function App() {
   }
 
   const onRemove = (product) => {
-    
+    const exist = shoppingBasket.find((x)=> x.id === product.id)
+    if(exist.qty === 1){
+      setShoppingBasket(shoppingBasket.filter((x)=> x.id !== product.id))
+    } else {
+      setShoppingBasket(shoppingBasket.map((x)=> x.id === product.id ? {...exist, qty: exist.qty - 1} : x))
+    }
   }
 
   return (
@@ -35,7 +40,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" exact element={<Home products={products} onAdd={onAdd} />} />
-        <Route path="shopping-basket" exact element={<ShoppingBasket shoppingBasket={shoppingBasket} onAdd={onAdd} />} />
+        <Route path="shopping-basket" exact element={<ShoppingBasket shoppingBasket={shoppingBasket} onAdd={onAdd} onRemove={onRemove} />} />
       </Routes>
     </Router>
     </>
