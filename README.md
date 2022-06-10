@@ -34,3 +34,12 @@
 7. The next step was to create a variable that worked out the price of all the items in the basket, i done this by multiplying everything that was in the basket by the amount of items there are. 
 
 8. After this was done i focused on displaying the amount of items in the basket. Currently i have it working based on individual items in the basket but it doesn't work if the quantity is increased.
+
+## Future endevours:
+
+- Style both pages with CSS
+- Switch the data from 'mock' code to being pulled from an API externally
+- Fix the amount of items being displayed in the basket so it also includes the quantity
+- Make it responsive
+- Add a sign in function for a user to create an account
+- Add the abilty for the user to checkout and 'pay' for their items
