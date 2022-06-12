@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
-import ShoppingBasket from './Pages/shoppingBasket/ShoppingBasket';
+import ShoppingBasket from './Pages/ShoppingBasket/ShoppingBasket';
 import data from './data/data'
 
 function App() {

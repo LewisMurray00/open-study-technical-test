@@ -7,18 +7,24 @@
 }
 
 .shopping-card-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 15rem));
+    display: inline-flex;
     gap: 2rem;
     justify-content: center;
     padding-top: 20px;
-    
+    width: 16rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    left: 200px;
 }
 
 .shopping-card{
     overflow: hidden;
     box-shadow: 0 2px 20px grey;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
+    min-height: 15rem;
+    max-height: 25rem;
+    width: 15rem;
     display: flex;
     align-items: center;
     justify-content: center;
