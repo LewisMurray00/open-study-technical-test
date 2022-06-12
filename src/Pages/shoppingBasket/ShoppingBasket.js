@@ -44,7 +44,7 @@ const ShoppingBasket = (props) => {
           <>
             <div className='shopping-basket-summary-container'>
               <p className='shopping-basket-summary-title'>Cost of items:</p>
-              <p className='shopping-basket-summary-price'>£{itemsPrice.toFixed(2)}</p>
+              <p className='shopping-basket-summary-price'> £{itemsPrice.toFixed(2)}</p>
             </div>
           </>
         )}

@@ -35,9 +35,10 @@
 
 8. After this was done i focused on displaying the amount of items in the basket. Currently i have it working based on individual items in the basket but it doesn't work if the quantity is increased.
 
+9. Some basic styling has been added to the webpage to make it readable and look more appeasing on the eye
+
 ## Future endevours:
 
-- Style both pages with CSS
 - Switch the data from 'mock' code to being pulled from an API externally
 - Fix the amount of items being displayed in the basket so it also includes the quantity
 - Make it responsive
